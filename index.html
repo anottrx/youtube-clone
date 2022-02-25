@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/4035698907.js" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet" />
     <title>Youtube</title>
@@ -22,8 +27,9 @@
         </nav>
     </header>
     <main>
-        <section>
-            <iframe id="mainVideo" src="https://www.youtube.com/embed/67stn7Pu7s4?controls=1">
+        <section class="videoSection">
+            <iframe id="mainVideo" src="https://www.youtube.com/embed/67stn7Pu7s4?controls=1" frameborder="0"
+                scrolling="auto">
             </iframe>
         </section>
         <section class="channelAndOtherVideo">
@@ -38,58 +44,68 @@
                     </div>
                     <div class="title"><span>클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS,
                             Javascript</span><span><i class="fa fa-caret-down"></i></span></div>
-                    <div><span>1M views 1 month ago</span></div>
+                    <div><span class="views">1M views 1 month ago</span></div>
                 </article>
                 <article>
                     <ul class="thumbsAndShareBtnGroup">
-                        <li class="thumbsUpAndCnt"><i id="thumbsUp" class="fa fa-thumbs-up"></i><span id="thumbsUpCnt">0</span></li>
+                        <li class="thumbsUpAndCnt"><i id="thumbsUp" class="fa fa-thumbs-up"></i><span
+                                id="thumbsUpCnt">0</span></li>
                         <li><i class="fa fa-thumbs-down"></i><span>0</span></li>
                         <li><i class="fa fa-share"></i><span>Share</span></li>
                         <li><i class="fa fa-plus"></i><span>Save</span></li>
                         <li><i class="fa fa-font-awesome-flag"></i><span>Report</span></li>
                     </ul>
                 </article>
+                <hr />
                 <article class="channelDescription">
                     <div class="imgAndChannel">
                         <div id="img">img</div>
-                        <div class="channelName"><span>드림코딩 by 엘리</span><span>1M subscribers</span></div>
+                        <div class="channelName"><span>드림코딩 by 엘리</span><span id="subscribers">1M subscribers</span>
+                        </div>
                     </div>
                     <div class="subscribe"><button id="subscribeBtn">Subscribe</button></div>
                 </article>
             </section>
+            <hr id="subscribeUnderBar" />
             <section class="otherVideoList">
-                <div>Up next</div>
+                <div id="upnext">Up next</div>
                 <article>
                     <article class="otherVideo">
                         <div class="otherVideoImages"><iframe class="otherVideoImage"
-                                src="https://www.youtube.com/embed/67stn7Pu7s4?controls=1">
+                                src="https://www.youtube.com/embed/67stn7Pu7s4?controls=1" frameborder="0">
                             </iframe> </div>
-                        <div class="otherVideoDescription"><span>클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자
+                        <div class="otherVideoDescription">
+                            <div>클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자
                                 입문편:
                                 HTML, CSS,
-                                Javascript</span><span>드림코딩 by 엘리</span><span>82K views</span></div>
+                                Javascript</div><span>드림코딩 by 엘리</span><span>82K views</span>
+                        </div>
                         <div class="otherVideoLogo"><i class="fa fa-ellipsis-v"></i>
                         </div>
                     </article>
                     <article class="otherVideo">
                         <div class="otherVideoImages"><iframe class="otherVideoImage"
-                                src="https://www.youtube.com/embed/67stn7Pu7s4?controls=1">
+                                src="https://www.youtube.com/embed/67stn7Pu7s4?controls=1" frameborder="0">
                             </iframe> </div>
-                        <div class="otherVideoDescription"><span>클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자
+                        <div class="otherVideoDescription">
+                            <div>클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자
                                 입문편:
                                 HTML, CSS,
-                                Javascript</span><span>드림코딩 by 엘리</span><span>82K views</span></div>
+                                Javascript</div><span>드림코딩 by 엘리</span><span>82K views</span>
+                        </div>
                         <div class="otherVideoLogo"><i class="fa fa-ellipsis-v"></i>
                         </div>
                     </article>
                     <article class="otherVideo">
                         <div class="otherVideoImages"><iframe class="otherVideoImage"
-                                src="https://www.youtube.com/embed/67stn7Pu7s4?controls=1">
+                                src="https://www.youtube.com/embed/67stn7Pu7s4?controls=1" frameborder="0">
                             </iframe> </div>
-                        <div class="otherVideoDescription"><span>클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자
+                        <div class="otherVideoDescription">
+                            <div>클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자
                                 입문편:
                                 HTML, CSS,
-                                Javascript</span><span>드림코딩 by 엘리</span><span>82K views</span></div>
+                                Javascript</div><span>드림코딩 by 엘리</span><span>82K views</span>
+                        </div>
                         <div class="otherVideoLogo"><i class="fa fa-ellipsis-v"></i>
                         </div>
                     </article>
