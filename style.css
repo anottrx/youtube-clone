@@ -12,12 +12,12 @@ html {
   height: 100%;
 }
 body {
-  margin: 0;
   height: 100%;
+  margin: 0;
 }
 nav {
-  padding: 8px 16px;
   display: flex;
+  padding: 8px 16px;
   background: black;
   color: white;
 }
@@ -30,20 +30,20 @@ nav {
 }
 ul {
   display: flex;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 li {
   list-style: none;
 }
 a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 #mainVideo {
   display: block;
-  width: 100%;
   overflow: auto;
+  width: 100%;
 }
 .titleAndChannel {
   padding: 4px 16px;
@@ -52,10 +52,11 @@ a {
   margin: 4px 16px;
 }
 .thumbsAndShareBtnGroup li {
+  display: flex;
   width: 100%;
   padding: 8px 12px;
-  display: flex;
   flex-direction: column;
+  /*  */
   align-items: center;
   justify-content: space-between;
 }
@@ -63,8 +64,9 @@ a {
   padding-bottom: 4px;
 }
 .channelDescription {
-  width: 100%;
   display: flex;
+  width: 100%;
+  /*  */
   flex-direction: row;
   justify-content: space-between;
 }
@@ -73,28 +75,31 @@ a {
   flex-direction: row;
 }
 #img {
-  padding-right: 16px;
+  display: flex;
   width: 32px;
   height: 32px;
+  padding-right: 16px;
+  /*  */
   align-items: center;
-  display: flex;
   justify-content: center;
 }
 .subscribe {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 #subscribeBtn {
-  background: red;
   border: none;
+  background: red;
   color: white;
+  /*  */
   border-radius: 5px;
 }
 #subscribeBtn.active {
-  background: beige;
   border: none;
+  background: beige;
   color: black;
+  /*  */
   border-radius: 5px;
 }
 .channelName {
@@ -106,8 +111,9 @@ a {
   color: blue;
 }
 .title {
-  align-items: center;
   display: flex;
+  /*  */
+  align-items: center;
   justify-content: center;
 }
 .hashtags,
@@ -126,8 +132,8 @@ a {
   padding-bottom: 4px;
 }
 .otherVideoList {
-  padding: 8px 12px;
   width: 100%;
+  padding: 8px 12px;
 }
 .otherVideo {
   display: flex;
@@ -141,9 +147,9 @@ a {
 }
 .otherVideoDescription {
   display: flex;
-  flex-direction: column;
-  padding-left: 12px;
   width: 65%;
+  padding-left: 12px;
+  flex-direction: column;
 }
 .otherVideoLogo {
   width: 5%;
